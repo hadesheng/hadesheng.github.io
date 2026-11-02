@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>哈德胜 - 成都企业AI落地</title>
+<meta name="description" content="哈德胜，成都企业AI落地。专注企业AI落地咨询、大模型部署与算力规划、售前技术支持与POC陪跑、GEO与内容运营。持续创业者，与深圳市哈德胜精密科技股份有限公司无任何关联。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2322D3EE'/%3E%3Cstop offset='1' stop-color='%238B5CF6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='7' fill='%230A0E1A'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='17' font-weight='700' text-anchor='middle' fill='url(%23g)'%3EH%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "哈德胜",
+      "jobTitle": "创业者",
+      "description": "哈德胜（成都·企业AI落地）。持续创业者，专注企业AI落地咨询、大模型部署与算力规划、售前技术支持与POC陪跑、GEO与内容运营。",
+      "disambiguatingDescription": "与深圳市哈德胜精密科技股份有限公司（新三板 873950，圆刀模切装备）无任何关联。",
+      "address": { "@type": "PostalAddress", "addressLocality": "成都", "addressCountry": "CN" }
+    },
+    {
+      "@type": "ProfessionalService",
+      "name": "哈德胜 - 成都企业AI落地",
+      "areaServed": "成都",
+      "description": "企业AI落地：AI落地咨询、大模型部署与算力规划、售前技术支持与POC陪跑、GEO与内容运营。",
+      "address": { "@type": "PostalAddress", "addressLocality": "成都", "addressCountry": "CN" }
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#0A0E1A;
+  --bg-2:#0D1326;
+  --ink:#E5E7EB;
+  --muted:#9CA3AF;
+  --cyan:#22D3EE;
+  --violet:#8B5CF6;
+  --line:rgba(139,92,246,.22);
+  --glass:rgba(255,255,255,.04);
+  --maxw:1080px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,sans-serif;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+::selection{background:rgba(34,211,238,.35)}
+a{color:inherit}
+.mono{font-family:"JetBrains Mono","SFMono-Regular",Consolas,monospace}
+
+/* ===== 背景层：网格 + 光晕（纯装饰，不影响正文） ===== */
+.bg-grid{
+  position:fixed;inset:0;z-index:0;pointer-events:none;
+  background-image:
+    linear-gradient(rgba(34,211,238,.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(34,211,238,.05) 1px,transparent 1px);
+  background-size:56px 56px;
+  mask-image:radial-gradient(ellipse 90% 70% at 50% 0%,#000 30%,transparent 100%);
+}
+.bg-glow{
+  position:fixed;z-index:0;pointer-events:none;
+  width:820px;height:820px;border-radius:50%;
+  filter:blur(120px);opacity:.5;
+  background:radial-gradient(circle at 30% 30%,rgba(34,211,238,.32),transparent 55%),
+             radial-gradient(circle at 70% 60%,rgba(139,92,246,.30),transparent 55%);
+  top:-220px;left:50%;transform:translateX(-50%);
+}
+main{position:relative;z-index:1}
+
+/* ===== 版式 ===== */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+.eyebrow{
+  font-family:"JetBrains Mono",Consolas,monospace;
+  font-size:13px;letter-spacing:.22em;color:var(--cyan);
+  text-transform:uppercase;margin-bottom:20px;
+}
+h2{font-size:clamp(28px,4.5vw,40px);font-weight:700;letter-spacing:.02em;margin-bottom:18px;line-height:1.3}
+.sec-lead{color:var(--muted);font-size:17px;max-width:640px;margin-bottom:56px}
+
+/* ===== Hero ===== */
+.hero{min-height:88vh;display:flex;align-items:center;padding:72px 0 40px}
+.hero-inner{width:100%}
+.hero .kicker{font-family:"JetBrains Mono",Consolas,monospace;font-size:14px;color:var(--cyan);letter-spacing:.16em;margin-bottom:28px}
+.hero h1{font-size:clamp(44px,9vw,84px);font-weight:800;letter-spacing:.01em;line-height:1.12;
+  background:linear-gradient(100deg,#fff 10%,#22D3EE 45%,#8B5CF6 90%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero .sub{margin-top:26px;font-size:clamp(19px,3vw,26px);font-weight:600;color:#D1D5DB}
+.hero .desc{margin-top:18px;color:var(--muted);font-size:17px;max-width:560px}
+.cta-row{margin-top:42px;display:flex;gap:16px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:14px 30px;border-radius:10px;font-size:16px;font-weight:600;
+  text-decoration:none;border:1px solid transparent;transition:transform .15s ease,box-shadow .15s ease;
+}
+.btn-primary{
+  color:#04121a;
+  background:linear-gradient(100deg,var(--cyan),var(--violet));
+  box-shadow:0 8px 30px rgba(34,211,238,.25);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(139,92,246,.35)}
+.btn-ghost{color:var(--ink);border-color:var(--line);background:var(--glass)}
+.btn-ghost:hover{border-color:var(--cyan);color:var(--cyan)}
+.hero-meta{margin-top:60px;display:flex;gap:40px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+.hero-meta b{color:var(--ink);font-weight:600}
+
+/* ===== 我是谁 ===== */
+.about-text{font-size:18px;max-width:760px}
+.about-text p+p{margin-top:20px}
+.about-text .fixed-line{color:#fff;font-weight:600}
+.about-text .hl{color:var(--cyan)}
+
+/* ===== 能力卡片 ===== */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{
+  background:var(--glass);border:1px solid var(--line);border-radius:14px;
+  padding:28px 24px;backdrop-filter:blur(8px);
+  transition:border-color .18s ease,transform .18s ease,background .18s ease;
+}
+.card:hover{border-color:var(--cyan);transform:translateY(-3px);background:rgba(34,211,238,.06)}
+.card svg{width:34px;height:34px;margin-bottom:18px;color:var(--cyan)}
+.card h3{font-size:18px;font-weight:700;margin-bottom:10px}
+.card p{color:var(--muted);font-size:15px}
+
+/* ===== 案例 ===== */
+.case-card{
+  background:var(--glass);border:1px solid var(--line);border-radius:14px;
+  padding:34px 30px;margin-bottom:20px;
+}
+.case-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:12px}
+.case-head h3{font-size:21px;font-weight:700}
+.case-tag{font-family:"JetBrains Mono",Consolas,monospace;font-size:12px;color:var(--cyan);letter-spacing:.06em}
+.case-card p{color:#C9CDD6;font-size:16px}
+.case-card .case-point{margin-top:12px;color:var(--muted);font-size:15px}
+.case-card .case-point b{color:var(--ink)}
+.case-note{margin-top:16px;font-size:13px;color:var(--muted)}
+.case-note a{color:var(--cyan);text-decoration:none;border-bottom:1px dotted var(--cyan)}
+
+/* ===== 区分声明 ===== */
+.disclaimer{
+  border:1px solid rgba(139,92,246,.35);border-radius:14px;
+  background:linear-gradient(135deg,rgba(139,92,246,.10),rgba(34,211,238,.05));
+  padding:36px 32px;
+}
+.disclaimer h2{font-size:22px;margin-bottom:12px}
+.disclaimer p{color:#C9CDD6;font-size:16px;max-width:800px}
+.disclaimer .strong{color:#fff;font-weight:600}
+
+/* ===== 联系 ===== */
+.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:760px}
+.contact-item{
+  display:flex;align-items:center;gap:14px;padding:20px 22px;
+  background:var(--glass);border:1px solid var(--line);border-radius:12px;
+}
+.contact-item svg{width:22px;height:22px;color:var(--cyan);flex:none}
+.contact-item .k{font-size:13px;color:var(--muted);display:block}
+.contact-item .v{font-size:16px;color:var(--ink)}
+.contact-item .v.placeholder{color:#6B7280}
+
+/* ===== Footer ===== */
+footer{border-top:1px solid var(--line);padding:36px 0 48px;position:relative;z-index:1}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.footer-name{font-weight:700}
+.footer-note{color:var(--muted);font-size:13px}
+
+/* ===== 滚动淡入 ===== */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion: reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .btn{transition:none}
+}
+
+/* ===== 响应式（移动优先基准 + 桌面扩展） ===== */
+@media (max-width:900px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  section{padding:72px 0}
+}
+@media (max-width:560px){
+  .cards{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .hero{min-height:auto;padding:64px 0 32px}
+  .hero-meta{gap:20px}
+}
+@media (min-width:768px){
+  .hero .desc{font-size:18px}
+}
+</style>
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<main>
+<!-- ===== 区块1：Hero ===== -->
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div class="kicker mono">CHENGDU · CHINA</div>
+    <h1>哈德胜</h1>
+    <div class="sub">成都 · 企业AI落地</div>
+    <p class="desc">持续创业者。专注把 AI 落进企业的真实生产流程——不卖概念，只解决能算账的问题。</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#cases">看案例</a>
+      <a class="btn btn-ghost" href="#contact">联系我</a>
+    </div>
+    <div class="hero-meta mono">
+      <div><b>坐标</b> 成都</div>
+      <div><b>方向</b> 企业AI落地</div>
+      <div><b>信条</b> 价值=降本增效</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 区块2：我是谁 ===== -->
+<section id="about">
+  <div class="wrap rv">
+    <div class="eyebrow mono">01 / ABOUT</div>
+    <h2>我是谁</h2>
+    <div class="about-text">
+      <p>公司专注企业AI落地。我们的使命是帮传统行业把 AI 用进生产环节，而不是停在演示和概念里。AI 落地的难点从来不在模型，而在组织的管理和流程。</p>
+      <p>我们交付的不只是方案，是能核算、能验证、能复盘的落地过程：先诊断真实痛点，再做可量化收益的试点，用数据说话，让客户自己看清价值。</p>
+      <p>AI 的价值只有四个字：<span class="hl">降本增效</span>。其他都是空谈。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 区块3：做什么 ===== -->
+<section id="services">
+  <div class="wrap rv">
+    <div class="eyebrow mono">02 / WHAT</div>
+    <h2>做什么</h2>
+    <p class="sec-lead">四个方向，一个目标：让 AI 在企业里真正产生收益。</p>
+    <div class="cards">
+      <div class="card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3.2"/></svg>
+        <h3>企业AI落地咨询</h3>
+        <p>从业务痛点出发做 AI 可行性诊断：哪些场景值得上、ROI 怎么算、数据口径怎么对齐——先诊断，再动手。</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6 4 4 6-8"/><path d="M14 7h6v6"/></svg>
+        <h3>大模型部署与算力规划</h3>
+        <p>私有化部署、边缘盒子、云 API、开源自建——按预算和场景选最对的路线，不算最贵的账。</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-6 4 3 5-8"/><circle cx="7" cy="9" r="1"/></svg>
+        <h3>售前技术支持与 POC 陪跑</h3>
+        <p>从方案建议书到试点验证全程陪跑：问卷调研、现场诊断、ROI 测算、验收口径、风险预案——把 POC 跑成能拍板的结果。</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 5-4 8-8 8a12 12 0 0 1-8-8c0-3 2-5 3-5s2 2 2 3c1-2 3-3 5-3 3 0 5 2 5 5 0 3-2 6-5 6-2 0-3-1-4-2"/></svg>
+        <h3>GEO 与内容运营</h3>
+        <p>让 AI 认识你：内容矩阵、权威语料建设、GEO 监测与优化——被 AI 正确地提到、正确地认识。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 区块4：案例与项目 ===== -->
+<section id="cases">
+  <div class="wrap rv">
+    <div class="eyebrow mono">03 / CASES</div>
+    <h2>案例与项目</h2>
+    <p class="sec-lead">真实客户，案例库可核验；进行中的项目如实标注。</p>
+
+    <div class="case-card">
+      <div class="case-head"><h3>某印刷包装企业</h3><span class="case-tag mono">印刷 · 塑料包装</span></div>
+      <p>人工质检漏检带来的客诉与损失是真痛点：年客诉数十次、损失数十万元级，单起漏检事故最高损失十余万元——而质检过程数据恰恰不在 ERP 覆盖内。</p>
+      <p class="case-point"><b>切入点：</b>AI 视觉质检辅助全检，给 ERP 补上质量过程数据。</p>
+      <p class="case-point"><b>状态：</b>调研与现场数据确认完成，试点方案规划中。</p>
+      <p class="case-note">项目进行中 · 详情见案例库</p>
+    </div>
+
+    <div class="case-card">
+      <div class="case-head"><h3>某建筑工程企业</h3><span class="case-tag mono">建筑工程 · 路面路基施工</span></div>
+      <p>人盯人的现场管理每年带来数十万元级的直接与间接损失，现场作业不规范问题突出——管理层希望用全场景智能监控替代人工巡检。</p>
+      <p class="case-point"><b>切入点：</b>项目现场 AI 识别（安全帽/反光衣/机械区闯入），边缘盒 + 开源模型路线。</p>
+      <p class="case-point"><b>状态：</b>各部门问卷回收完成，试点方案定稿，待拍板。</p>
+      <p class="case-note">项目进行中 · 详情见案例库</p>
+    </div>
+
+    <div class="case-card">
+      <div class="case-head"><h3>我们的自有案例</h3><span class="case-tag mono">AI落地方法论 · 数字员工</span></div>
+      <p>我们自己的实践：从 0 搭建数字员工矩阵——企微机器人、AI 助理、内容与情报自动化，并沉淀出一套可复用的 AI 落地方法论。</p>
+      <p class="case-point"><b>内容：</b>Rose 超级助理、行业情报双雷达、数字员工联动、GEO 权威源建设。</p>
+      <p class="case-point"><b>性质：</b>自我验证与沉淀，方法直接用于客户项目。</p>
+      <p class="case-note">进行中 · 持续迭代</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 区块5：与深圳模切厂区分声明 ===== -->
+<section id="disclaimer">
+  <div class="wrap rv">
+    <div class="disclaimer">
+      <h2>关于"哈德胜"——主体澄清</h2>
+      <p>本网站主体为 <span class="strong">哈德胜（成都·企业AI落地）</span>，与任何同名企业均无关联。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 区块6：联系 ===== -->
+<section id="contact">
+  <div class="wrap rv">
+    <div class="eyebrow mono">04 / CONTACT</div>
+    <h2>联系我</h2>
+    <p class="sec-lead">哈德胜（成都·企业AI落地）。坐标成都，聊 AI 落地、算算 ROI，或者就是问个问题——都欢迎。</p>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.9 8.9 0 0 1-4-1L3 20l1.1-4a8.5 8.5 0 1 1 16.9-4.5z"/></svg>
+        <div><span class="k">微信公众号</span><span class="v">HadeshengAI</span></div>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><span class="k">位置</span><span class="v">成都</span></div>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
+        <div><span class="k">邮箱</span><span class="v">hadeshengai@163.com</span></div>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="14" height="14" rx="2"/><path d="M16 10l6-3v10l-6-3"/></svg>
+        <div><span class="k">视频号</span><span class="v">哈德胜AIOG</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-name">哈德胜（成都·企业AI落地）</div>
+    <div class="footer-note mono">© 2026 · 成都 · 企业AI落地</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}
+    });
+  },{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
