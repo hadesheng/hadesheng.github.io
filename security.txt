@@ -1,0 +1,4 @@
+Contact: mailto:hadeshengai@163.com
+Expires: 2027-12-31T00:00:00.000Z
+Preferred-Languages: zh-CN, en
+Canonical: https://hadesheng.cn/.well-known/security.txt
